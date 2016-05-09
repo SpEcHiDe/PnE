@@ -1,0 +1,29 @@
+#brand-logo{
+  font-size: 13px;
+  text-align:center;
+}
+#brand-logo #keito{
+  max-width: 0px;
+  visibility: hidden;
+}
+#brand-logo:hover #keito{
+  visibility: visible;
+}
+img#logo{
+  width: 2em;
+  height: 3em;
+}
+.overlay{
+    z-index: -1;
+    background: rgba(0,0,0,.7);
+}
+.front{
+  z-index: -2;
+  background-image: url('../img/boast.png') no-repeat;
+  background-size: cover;
+}
+header #logo-container #subtitle {
+  color: #e85151;
+  font-weight: bold;
+  font-size: 18px;
+}
