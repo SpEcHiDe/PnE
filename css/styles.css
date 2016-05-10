@@ -27,3 +27,37 @@ header #logo-container #subtitle {
   font-weight: bold;
   font-size: 18px;
 }
+
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+.wide {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-image:url('../img/boast.png');
+  background-size:cover;
+}
+.wide img {
+  width:100%;
+}
+.logo {
+  font-weight:800;
+  font-size:14pt;
+  padding:25px;
+  text-align:center;
+}
+.line {
+  padding-top:20px;
+  white-space:no-wrap;
+  overflow:hidden;
+  text-align:center;
+}
+#mainNav{
+  background-color: #03a9f4;
+}
