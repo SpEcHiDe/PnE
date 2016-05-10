@@ -1,3 +1,21 @@
+
+$('.carousel').carousel({
+  interval: 3500, // in milliseconds
+  pause: 'none' // set to 'true' to pause slider on mouse hover
+})
+
+$( "a.submenu" ).click(function() {
+$( ".menuBar" ).slideToggle( "normal", function() {
+// Animation complete.
+});
+});
+$( "ul li.dropdown a" ).click(function() {
+$( "ul li.dropdown ul" ).slideToggle( "normal", function() {
+// Animation complete.
+});
+$('ul li.dropdown').toggleClass('current');
+});
+
 var a =
 `
  .d8888b.  888                       888
@@ -15,3 +33,7 @@ Y88b  d88P Y88b.  Y88..88P 888 d88P         account, it is a scam and will give 
 See https://www.facebook.com/selfxss for more information.
 `;
 console.log(a);
+
+function subscribe(){
+  alert('not implemented!');
+}
