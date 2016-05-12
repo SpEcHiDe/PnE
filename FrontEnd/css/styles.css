@@ -1,0 +1,27 @@
+
+body,html {
+  height: 100%;
+}
+body {
+  padding-top: 50px;
+}
+
+#brand-logo{
+  font-size: 13px;
+  text-align:center;
+}
+#brand-logo #keito{
+  max-width: 0px;
+  visibility: hidden;
+}
+#brand-logo:hover #keito{
+  visibility: visible;
+}
+
+img#logo{
+  width: 2em;
+  height: 3em;
+}
+#mainNav{
+  background-color: #03a9f4;
+}
