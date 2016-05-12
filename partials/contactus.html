@@ -2,31 +2,22 @@
     <h1>Contact US</h1>
     <div class="panel-body">
         <form role="form" method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+          <fieldset>
             <div class='form-group'>
-                <div class="input-group">
-                  <span class="input-group-btn">NAME</span>
-                  <input type="text" class="form-control" id="fromname" name="fromname">
+                <input type="text" placeholder="Your NAME" class="form-control" id="fromname" name="fromname">
+            </div>
+            <div class='form-group'>
+                <input type="email" placeholder="ELECTRONIC MAIL ID" class="form-control" id="fromemail" name="fromemail">
                 </div>
             </div>
             <div class='form-group'>
-                <div class="input-group">
-                  <span class="input-group-btn">ELECTRONIC MAIL ID</span>
-                  <input type="email" class="form-control" id="fromemail" name="fromemail">
-                </div>
+                <input type="text" placeholder="Subject" class="form-control" id="sub" name="sub">
             </div>
             <div class='form-group'>
-                <div class="input-group">
-                  <span class="input-group-btn">SUBJECT</span>
-                  <input type="text" class="form-control" id="sub" name="sub">
-                </div>
-            </div>
-            <div class='form-group'>
-                <div class="input-group">
-                  <span class="input-group-btn">MESSAGE</span>
-                  <textarea class="form-control" id="msg" name="msg" cols="40" rows="5"></textarea>
-                </div>
+                <textarea placeholder="A Brief Message" class="form-control" id="msg" name="msg" cols="40" rows="5"></textarea>
             </div>
             <button type="button" name='emailBtn' class='btn btn-lg btn-success btn-block' onClick="sendEMail()">Send Message</button>
+          </fieldset>
         </form>
     </div>
 </div>
