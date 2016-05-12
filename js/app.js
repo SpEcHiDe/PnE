@@ -15,7 +15,14 @@ app.controller('mainController', function($scope) {
                 templateUrl : 'partials/home.html',
                 controller  : 'homeController'
             })
-
+						.when('/app', {
+                templateUrl : 'partials/app.html',
+                controller  : 'appController'
+            })
+						.when('/biz', {
+                templateUrl : 'partials/biz.html',
+                controller  : 'bizController'
+            })
             // route for the about page
             .when('/faq', {
                 templateUrl : 'partials/faq.html',
@@ -38,13 +45,17 @@ app.controller('mainController', function($scope) {
 		// create the controller and inject Angular's $scope
     app.controller('homeController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
+        $scope.message = 'HOME';
     });
-
+		app.controller('appController', function($scope) {
+        $scope.message = 'APP -- under construction';
+    });
+		app.controller('bizController', function($scope) {
+        $scope.message = 'BIZ';
+    });
     app.controller('faqController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
+        $scope.message = 'FAQ';
     });
-
     app.controller('contactusController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+        $scope.message = 'Contact us!';
     });

@@ -1,5 +1,32 @@
 <div class="jumbotron text-center">
     <h1>Contact US</h1>
-
-    <p>{{ message }}</p>
+    <div class="panel-body">
+        <form role="form" method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+            <div class='form-group'>
+                <div class="input-group">
+                  <span class="input-group-btn">NAME</span>
+                  <input type="text" class="form-control" id="fromname" name="fromname">
+                </div>
+            </div>
+            <div class='form-group'>
+                <div class="input-group">
+                  <span class="input-group-btn">ELECTRONIC MAIL ID</span>
+                  <input type="email" class="form-control" id="fromemail" name="fromemail">
+                </div>
+            </div>
+            <div class='form-group'>
+                <div class="input-group">
+                  <span class="input-group-btn">SUBJECT</span>
+                  <input type="text" class="form-control" id="sub" name="sub">
+                </div>
+            </div>
+            <div class='form-group'>
+                <div class="input-group">
+                  <span class="input-group-btn">MESSAGE</span>
+                  <textarea class="form-control" id="msg" name="msg" cols="40" rows="5">
+                </div>
+            </div>
+            <button type="button" name='emailBtn' class='btn btn-lg btn-success btn-block' onClick="sendEMail()">Send Message</button>
+        </form>
+    </div>
 </div>
