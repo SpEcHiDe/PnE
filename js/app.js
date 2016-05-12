@@ -6,7 +6,7 @@ var app = angular.module('keito', ['ngRoute']);
             // route for the home page
             .when('/', {
                 templateUrl : 'partials/home.html',
-                controller  : 'mainController'
+                controller  : 'homeController'
             })
 
             // route for the about page
@@ -22,14 +22,14 @@ var app = angular.module('keito', ['ngRoute']);
             });
 
 				// use the HTML5 History API
-        $locationProvider.html5Mode({
+        /*$locationProvider.html5Mode({
   				enabled: true,
   				requireBase: false
-				});
+				});*/
     });
 
 		// create the controller and inject Angular's $scope
-    app.controller('mainController', function($scope) {
+    app.controller('homeController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
     });
