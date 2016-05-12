@@ -25,7 +25,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-controller="mainController">
 
   <header>
 
@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="brand-logo" class="navbar-brand page-scroll" href="#page-top">
+          <a id="brand-logo" class="navbar-brand" href="/">
             <img id="logo" src="img/logo.png">
             <span id="keito">Keito</span>
           </a>
@@ -46,16 +46,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a class="page-scroll" href="#one">Keito</a>
+              <a href="#app">Keito</a>
             </li>
             <li>
-              <a class="page-scroll" href="#biz">Biz</a>
+              <a href="#biz">Biz</a>
             </li>
             <li>
-              <a class="page-scroll" href="#faq">FAQ</a>
+              <a href="#faq">FAQ</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contactus">Contact Us</a>
+              <a href="#contactus">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -64,55 +64,18 @@
 
   </header>
 
-  <div class="wide">
-    <div class="col-xs-5 line"><hr></div>
-     <div class="col-xs-2 logo">
-       <div class="jumbotron center">
-         <h1 class="text-center">KEITO</h1>
-         <p>lorem ipsum</p>
-       </div>
-     </div>
-    <div class="col-xs-5 line"><hr></div>
+  <!-- MAIN CONTENT AND INJECTED VIEWS -->
+  <div id="main">
+      <!-- angular templating -->
+      <!-- this is where content will be injected -->
+      <div ng-view></div>
+
   </div>
-
-  <section id="one">
-    <div class="container">
-      <div class="row">
-        <div class="jumbotron">
-          <h1 class="text-center">KEITO</h1>
-          <p>lorem ipsum</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="biz">
-    <div class="container">
-      <div class="row">
-
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container">
-      <div class="row">
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contactus">
-    <div class="container">
-      <div class="row">
-
-      </div>
-    </div>
-  </section>
 
     <script src='js/jquery.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
     <script src='js/angular.min.js'></script>
+    <script src='js/angular-route.js'></script>
     <script src='js/functions.js'></script>
     <script src='js/app.js'></script>
 

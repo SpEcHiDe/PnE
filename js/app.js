@@ -1,58 +1,43 @@
-var app = angular.module('keito', [/*'ngRoute', 'ngSanitize', 'ui.select'*/]);
+var app = angular.module('keito', ['ngRoute']);
 
-/*
-app.config(function($routeProvider) {
-	$routeProvider
-		.when('/', {
-			templateUrl : 'assets/partials/home.html',
-			controller  : 'homeController'
-		})
-		.when('/events', {
-			templateUrl : 'assets/partials/events.html',
-			controller  : 'eventsController'
-		})
-		.when('/events/:eventCode', {
-			templateUrl : 'assets/partials/event.html',
-			controller  : 'eventController'
-		})
-		.when('/workshops', {
-			templateUrl : 'assets/partials/workshops.html',
-			controller  : 'workshopsController'
-		})
-		.when('/workshops/:eventCode', {
-			templateUrl : 'assets/partials/workshop.html',
-			controller  : 'eventController'
-		})
-		.when('/contact', {
-			templateUrl : 'assets/partials/contact.html',
-			controller  : 'contactController'
-		})
-		.when('/prodezza', {
-			templateUrl : 'assets/partials/prodezza.html',
-			controller  : 'prodezzaController'
-		})
-		.when('/proshows', {
-			templateUrl : 'assets/partials/proshows.html',
-			controller  : 'proshowsController'
-		})
-		.when('/sneharagam', {
-			templateUrl : 'assets/partials/sneharagam.html',
-			controller  : 'sneharagamController'
-		})
-		.when('/iink', {
-			templateUrl : 'assets/partials/iink.html',
-			controller  : 'iinkController'
-		})
-		.when('/sponsors', {
-			templateUrl : 'assets/partials/sponsor.html',
-			controller  : 'sponsorController'
-		})
-		.when('/_=_', {
-			templateUrl : 'assets/partials/home.html',
-			controller  : 'homeController'
-		})
-		.otherwise({
-	        redirectTo: '/'
-	    });
-});
-*/
+		// configure our routes
+    app.config(function($routeProvider, $locationProvider) {
+        $routeProvider
+            // route for the home page
+            .when('/', {
+                templateUrl : 'partials/home.html',
+                controller  : 'mainController'
+            })
+
+            // route for the about page
+            .when('/faq', {
+                templateUrl : 'partials/faq.html',
+                controller  : 'faqController'
+            })
+
+            // route for the contact page
+            .when('/contactus', {
+                templateUrl : 'partials/contactus.html',
+                controller  : 'contactusController'
+            });
+
+				// use the HTML5 History API
+        $locationProvider.html5Mode({
+  				enabled: true,
+  				requireBase: false
+				});
+    });
+
+		// create the controller and inject Angular's $scope
+    app.controller('mainController', function($scope) {
+        // create a message to display in our view
+        $scope.message = 'Everyone come and see how good I look!';
+    });
+
+    app.controller('faqController', function($scope) {
+        $scope.message = 'Look! I am an about page.';
+    });
+
+    app.controller('contactusController', function($scope) {
+        $scope.message = 'Contact us! JK. This is just a demo.';
+    });
