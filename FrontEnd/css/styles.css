@@ -17,11 +17,26 @@ body {
 #brand-logo:hover #keito{
   visibility: visible;
 }
-
 img#logo{
   width: 2em;
   height: 3em;
+  //display: none;
 }
 #mainNav{
   background-color: #03a9f4;
+}
+img#brandlogo{
+  width: 15em;
+  height: 15em;
+}
+img#android_logo{
+  width: 5em;
+  height: 3em;
+}
+.item > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto
 }
