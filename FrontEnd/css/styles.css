@@ -41,10 +41,11 @@ img#brandlogo{
   height: 15em;
 }
 img#android_logo{
-  width: 5em;
+  width: 30em;
   height: 3em;
-  border-right: 1px solid #B8C1B7;
+  //border-right: 1px solid #B8C1B7;
   float: left;
+  padding: 5px;
 }
 .item > img {
   display: block;
@@ -56,6 +57,9 @@ img#android_logo{
 img#android_text{
   height: 3em;
   float: right;
+  border-left: 1px solid #B8C1B7;
+  float: left;
+  padding: 5px;
 }
 .list-group-item-text{
   text-align: left;
