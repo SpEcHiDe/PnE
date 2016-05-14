@@ -32,6 +32,8 @@ img#brandlogo{
 img#android_logo{
   width: 5em;
   height: 3em;
+  border-right: 1px solid #B8C1B7;
+  float: left;
 }
 .item > img {
   display: block;
@@ -39,4 +41,8 @@ img#android_logo{
   margin-left: auto;
   max-width: 100%;
   height: auto
+}
+img#android_text{
+  height: 3em;
+  float: right;
 }
