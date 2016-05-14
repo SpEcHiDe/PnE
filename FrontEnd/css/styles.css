@@ -32,7 +32,7 @@ img#logo{
 .card-panel{
   box-shadow: none;
 }
-#mainNav > ul > li > a {
+#mainNav > div > ul > li > a {
   color: #42a5f5;
   margin-right: 3em;
 }
@@ -62,4 +62,18 @@ img#android_text{
 }
 .grey-text{
   text-align: left;
+}
+.glyphicon-chevron-left{
+  content: url('../img/left_arrow.png');
+}
+.glyphicon-chevron-right{
+  content: url('../img/right_arrow.png');
+}
+@media screen and (min-width: 768px){
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+    width: 75px;
+    height: 75px;
+    margin-top: -30px;
+    font-size: 30px;
+  }
 }
