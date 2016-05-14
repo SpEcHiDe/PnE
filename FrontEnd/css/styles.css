@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=ABeeZee);
 
 body,html {
+  font-family: 'ABeeZee', sans-serif;
   height: 100%;
 }
 body {
@@ -23,7 +25,16 @@ img#logo{
   //display: none;
 }
 #mainNav{
-  background-color: #03a9f4;
+  background-color: #fff;
+  color: #2196F3;
+  box-shadow: none;
+}
+.card-panel{
+  box-shadow: none;
+}
+#mainNav > ul > li > a {
+  color: #42a5f5;
+  margin-right: 3em;
 }
 img#brandlogo{
   width: 15em;
@@ -45,4 +56,10 @@ img#android_logo{
 img#android_text{
   height: 3em;
   float: right;
+}
+.list-group-item-text{
+  text-align: left;
+}
+.grey-text{
+  text-align: left;
 }
