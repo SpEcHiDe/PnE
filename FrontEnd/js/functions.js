@@ -1,4 +1,4 @@
-//var qwerty = (function (){
+
 var a =
 `
  .d8888b.  888                       888
@@ -42,5 +42,3 @@ function sendEMail(){
 		};
 		xhttp.send();
 }
-
-//});
