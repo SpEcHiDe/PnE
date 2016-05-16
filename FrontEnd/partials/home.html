@@ -16,9 +16,33 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <!-- chat engine start -->
-        <iframe class="embed-responsive-item" src="partials/chat/index.html" width="320px" height="400px" frameborder="0" />
-        <!-- chat engine end -->
+
+        <ul class="nav nav-pills">
+          <li><a data-toggle="pill" data-target="#gmaps">ONE</a></li>
+          <li class="active"><a data-toggle="pill" data-target="#individual">TWO</a></li>
+          <li><a data-toggle="pill" data-target="#group">THREE</a></li>
+        </ul>
+
+        <br>
+
+        <div class="tab-content">
+          <div id="gmaps" class="tab-pane">
+            <iframe class="embed-responsive-item" src="partials/gmap/index.html" frameborder="0" />
+          </div>
+          <div id="individual" class="tab-pane in active">
+            <!-- chat engine start -->
+            <iframe class="embed-responsive-item" src="partials/chat/index.html" frameborder="0" />
+            <!-- chat engine end -->
+          </div>
+          <div id="group" class="tab-pane">
+            <iframe class="embed-responsive-item" src="partials/gchat/index.html" frameborder="0" />
+          </div>
+        </div>
+
+
+
+
+
       </div>
     </div>
     <div class="row">

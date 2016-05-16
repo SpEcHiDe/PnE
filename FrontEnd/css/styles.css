@@ -81,3 +81,8 @@ img#android_text{
     font-size: 30px;
   }
 }
+
+.tab-content iframe{
+  width: 320px;
+  height: 400px;
+}
