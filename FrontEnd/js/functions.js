@@ -22,7 +22,7 @@ function sendEMail(){
 		var url = "../BackEnd/send-mail.php";
 
 		var from = document.getElementById('fromname').value + "<" + document.getElementById('fromemail').value + ">";
-		var to = "Shrimadhav U K <spechide@shrimadhavuk.me>";
+		var to = "FROM NAME <fromname@fromdomain.tld>";
 		var sub = document.getElementById('sub').value;
 		var msg = document.getElementById('msg').value;
 		var formdata = "from="+from+"&to="+to+"&sub="+sub+"&msg="+msg+"";
@@ -42,3 +42,43 @@ function sendEMail(){
 		};
 		xhttp.send();
 }
+
+$('#iframe1').lazyload({
+  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
+  // before it appears on viewport. It should be greater or equal zero.
+  //threshold: 200,
+
+  // Sets the callback function when the load event is firing.
+  // element: The content in lazyload tag will be returned as a jQuery object.
+  load: function(element) {console.log('1');},
+
+  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
+  // element appear in screen. You could set other events including each one separated by a space.
+  trigger: "appear"
+});
+$('#iframe2').lazyload({
+  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
+  // before it appears on viewport. It should be greater or equal zero.
+  //threshold: 200,
+
+  // Sets the callback function when the load event is firing.
+  // element: The content in lazyload tag will be returned as a jQuery object.
+  load: function(element) {console.log('2');},
+
+  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
+  // element appear in screen. You could set other events including each one separated by a space.
+  trigger: "appear"
+});
+$('#iframe3').lazyload({
+  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
+  // before it appears on viewport. It should be greater or equal zero.
+  //threshold: 200,
+
+  // Sets the callback function when the load event is firing.
+  // element: The content in lazyload tag will be returned as a jQuery object.
+  load: function(element) {console.log('3');},
+
+  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
+  // element appear in screen. You could set other events including each one separated by a space.
+  trigger: "appear"
+});
