@@ -1,9 +1,5 @@
 'use strict';
 
-function console.log(argument){
-  console.log(argument);
-}
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Messenger = function () {

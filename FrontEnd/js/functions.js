@@ -52,8 +52,8 @@ setInterval(function(){
   },1000);
   setTimeout(function(){
     animtwo.click();
-  },1000);
+  },2000);
   setTimeout(function(){
     animthree.click();
-  },1000);
-}, 10000);
+  },5000);
+}, 2000);
