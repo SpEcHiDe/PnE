@@ -49,10 +49,10 @@ setInterval(function(){
   var animthree = document.getElementById('animthree');
   setTimeout(function(){
     animone.click();
-  },2000);
+  },3000);
   setTimeout(function(){
     animtwo.click();
-  },3000);
+  },5000);
   setTimeout(function(){
     animthree.click();
   },5000);
