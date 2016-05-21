@@ -1,5 +1,9 @@
 'use strict';
 
+function console.log(argument){
+  console.log(argument);
+}
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Messenger = function () {
@@ -109,104 +113,108 @@ var BuildHTML = function () {
 
 $(document).ready(function () {
 
-  document.getElementById('input').placeholder = "Type message . . .";
+  setInterval(function(){
+    document.getElementById('input').placeholder = "Type message . . .";
 
-  var messenger = new Messenger();
-  var buildHTML = new BuildHTML();
+    var messenger = new Messenger();
+    var buildHTML = new BuildHTML();
 
-  var $input = $('#input');
-  var $send = $('#send');
-  var $content = $('#content');
-  var $inner = $('#inner');
+    var $input = $('#input');
+    var $send = $('#send');
+    var $content = $('#content');
+    var $inner = $('#inner');
 
-  function safeText(text) {
-    $content.find('.message-wrapper').last().find('.text-wrapper').text(text);
-  }
+    function safeText(text) {
+      $content.find('.message-wrapper').last().find('.text-wrapper').text(text);
+    }
 
-  function animateText() {
+    function animateText() {
+      setTimeout(function () {
+        $content.find('.message-wrapper').last().find('.text-wrapper').addClass('animated fadeIn');
+      }, 350);
+    }
+
+    function scrollBottom() {
+      $($inner).animate({
+        scrollTop: $($content).offset().top + $($content).outerHeight(true)
+      }, {
+        queue: false,
+        duration: 'ease'
+      });
+    }
+
+    function buildSent(message) {
+      //console.log('sending: ', message.text);
+
+      $content.append(buildHTML.me(message.text));
+      safeText(message.text);
+      animateText();
+
+      scrollBottom();
+    }
+
+    function buildRecieved(message) {
+      //console.log('recieving: ', message.text);
+
+      $content.append(buildHTML.them(message.text));
+      safeText(message.text);
+      animateText();
+
+      scrollBottom();
+    }
+
+    function sendMessage() {
+      var text = $input.val();
+      messenger.send(text);
+
+      $input.val('');
+      $input.focus();
+    }
+
+    messenger.onSend = buildSent;
+    messenger.onRecieve = buildRecieved;
+
     setTimeout(function () {
-      $content.find('.message-wrapper').last().find('.text-wrapper').addClass('animated fadeIn');
-    }, 350);
-  }
+      messenger.recieve('message one!');
+    }, 1500);
 
-  function scrollBottom() {
-    $($inner).animate({
-      scrollTop: $($content).offset().top + $($content).outerHeight(true)
-    }, {
-      queue: false,
-      duration: 'ease'
-    });
-  }
+    setTimeout(function () {
+      buildSent({'text':'message one!'});
+    }, 3000);
 
-  function buildSent(message) {
-    console.log('sending: ', message.text);
+    setTimeout(function () {
+      messenger.recieve('message two!');
+    }, 4500);
 
-    $content.append(buildHTML.me(message.text));
-    safeText(message.text);
-    animateText();
+    setTimeout(function () {
+      buildSent({'text':'message two!'});
+    }, 6000);
 
-    scrollBottom();
-  }
+    setTimeout(function () {
+      messenger.recieve('message three!');
+    }, 7500);
 
-  function buildRecieved(message) {
-    console.log('recieving: ', message.text);
+    setTimeout(function () {
+      buildSent({'text':'message three!'});
+    }, 9000);
 
-    $content.append(buildHTML.them(message.text));
-    safeText(message.text);
-    animateText();
-
-    scrollBottom();
-  }
-
-  function sendMessage() {
-    var text = $input.val();
-    messenger.send(text);
-
-    $input.val('');
     $input.focus();
-  }
 
-  messenger.onSend = buildSent;
-  messenger.onRecieve = buildRecieved;
+    $send.on('click', function (e) {
+      sendMessage();
+    });
 
-  setTimeout(function () {
-    messenger.recieve('message one!');
-  }, 1500);
+    $input.on('keydown', function (e) {
+      var key = e.which || e.keyCode;
 
-  setTimeout(function () {
-    buildSent({'text':'message one!'});
-  }, 3000);
+      if (key === 13) {
+        // enter key
+        e.preventDefault();
 
-  setTimeout(function () {
-    messenger.recieve('message two!');
+        sendMessage();
+      }
+    });
+
   }, 5000);
 
-  setTimeout(function () {
-    buildSent({'text':'message two!'});
-  }, 6500);
-
-  setTimeout(function () {
-    messenger.recieve('message three!');
-  }, 7500);
-
-  setTimeout(function () {
-    buildSent({'text':'message three!'});
-  }, 9000);
-
-  $input.focus();
-
-  $send.on('click', function (e) {
-    sendMessage();
-  });
-
-  $input.on('keydown', function (e) {
-    var key = e.which || e.keyCode;
-
-    if (key === 13) {
-      // enter key
-      e.preventDefault();
-
-      sendMessage();
-    }
-  });
 });

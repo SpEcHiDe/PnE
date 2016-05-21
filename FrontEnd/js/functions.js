@@ -43,42 +43,17 @@ function sendEMail(){
 		xhttp.send();
 }
 
-$('#iframe1').lazyload({
-  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
-  // before it appears on viewport. It should be greater or equal zero.
-  //threshold: 200,
-
-  // Sets the callback function when the load event is firing.
-  // element: The content in lazyload tag will be returned as a jQuery object.
-  load: function(element) {console.log('1');},
-
-  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
-  // element appear in screen. You could set other events including each one separated by a space.
-  trigger: "appear"
-});
-$('#iframe2').lazyload({
-  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
-  // before it appears on viewport. It should be greater or equal zero.
-  //threshold: 200,
-
-  // Sets the callback function when the load event is firing.
-  // element: The content in lazyload tag will be returned as a jQuery object.
-  load: function(element) {console.log('2');},
-
-  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
-  // element appear in screen. You could set other events including each one separated by a space.
-  trigger: "appear"
-});
-$('#iframe3').lazyload({
-  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
-  // before it appears on viewport. It should be greater or equal zero.
-  //threshold: 200,
-
-  // Sets the callback function when the load event is firing.
-  // element: The content in lazyload tag will be returned as a jQuery object.
-  load: function(element) {console.log('3');},
-
-  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
-  // element appear in screen. You could set other events including each one separated by a space.
-  trigger: "appear"
-});
+setInterval(function(){
+  var animone = document.getElementById('animone');
+  var animtwo = document.getElementById('animtwo');
+  var animthree = document.getElementById('animthree');
+  setTimeout(function(){
+    animone.click();
+  },1000);
+  setTimeout(function(){
+    animtwo.click();
+  },1000);
+  setTimeout(function(){
+    animthree.click();
+  },1000);
+}, 10000);
