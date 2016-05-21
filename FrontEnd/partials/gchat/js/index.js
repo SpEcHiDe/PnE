@@ -79,4 +79,27 @@ $(document).ready(function(){
 
 		});
 	});
+
+  /* add custom code to click a particular chat and preview messages, then close that chat! */
+  var index = Math.round((5 - 1) * Math.random());
+  setTimeout(function(){
+    var selectedFriend = document.getElementsByClassName('friend')[index];
+    selectedFriend.click();
+    $('#lastOption').animatescroll(
+      {
+        element:'#chat-messages',
+        scrollSpeed:10,
+        onScrollStart:function(){
+          console.log('scroll started')
+        },
+        onScrollEnd:function(){
+          console.log('scroll ended')
+        }
+      }
+    );
+    setTimeout(function(){
+      document.getElementById('close').click();
+    },3000);
+  },2000);
+  /* add custom code to click a particular chat and preview messages, then close that chat! */
 });
