@@ -41,7 +41,7 @@ img#brandlogo{
   height: 15em;
 }
 img#android_logo{
-  width: 77em;
+  width: 100%;
   height: 3em;
   float: left;
 }
@@ -55,7 +55,7 @@ img#android_logo{
 img#android_text{
   height: 3em;
   float: right;
-  border-left: 1px solid #B8C1B7;
+  border-left: 2px solid #B8C1B7;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
