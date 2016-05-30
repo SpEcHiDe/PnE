@@ -33,15 +33,13 @@
     <div class="container">
       <div class="row">
         <nav id="mainNav">
-          <!--<div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand page-scroll" href="#page-top" style="font-size: 13px;text-align:center;"></a>
-        </div>-->
+          <div class="navbar-header">
+
+          <a id="brand-logo" class="navbar-brand" href="#/">
+            <img id="logo" src="img/logo.png">
+            <span id="keito">Keito</span>
+          </a>
+          </div>
           <div class="collapse navbar-collapse">
           <ul class="nav nav-pills pull-right">
             <li class="first about-item">
@@ -72,6 +70,13 @@
       <!-- angular templating -->
       <!-- this is where content will be injected -->
       <div ng-view></div>
+
+      <div class="container row">
+        <footer class="footer">
+          <p class="text-muted pull-left grey-text lighten-2">copyright &copy; 2016 pencilanderaser enterprises</p>
+        </footer>
+      </div>
+
   </div>
 
     <script src='js/jquery.min.js'></script>
