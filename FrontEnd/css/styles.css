@@ -85,3 +85,35 @@ img#android_text{
   width: 320px;
   height: 400px;
 }
+
+iframe#appanim{
+  width: 570px;
+  height: 452px;
+}
+
+.tabs .tab{
+  text-transform: none;
+  font-size: 2em;
+}
+
+.nav-tabs>li.active>a:hover {
+  color: #2196F3;
+  border-style: solid;
+  border-color: #9e9e9e;
+  border-width: 0px 0px 4px 0px;
+}
+.nav-tabs>li.active>a {
+  color: #2196F3;
+  border-style: solid;
+  border-color: #9e9e9e;
+  border-width: 0px 0px 4px 0px;
+}
+.tabs .tab a{
+  color: #2196F3;
+  border: none;
+}
+
+.tabs .tab a:hover{
+  color: #2196F3;
+  border: none;
+}

@@ -46,16 +46,35 @@ app.controller('mainController', function($scope) {
     app.controller('homeController', function($scope) {
         // create a message to display in our view
         $scope.message = 'HOME';
+				document.getElementById('brand-logo').style.display = "none";
+				var animation_home = setInterval(function(){
+		      var animone = document.getElementById('animone');
+		      var animtwo = document.getElementById('animtwo');
+		      var animthree = document.getElementById('animthree');
+		      setTimeout(function(){
+		        animone.click();
+		      },3000);
+		      setTimeout(function(){
+		        animtwo.click();
+		      },5000);
+		      setTimeout(function(){
+		        animthree.click();
+		      },5000);
+		    }, 10000);
     });
 		app.controller('appController', function($scope) {
         $scope.message = 'APP -- under construction';
+				document.getElementById('brand-logo').style.display = "block";
     });
 		app.controller('bizController', function($scope) {
         $scope.message = 'BIZ';
+				document.getElementById('brand-logo').style.display = "block";
     });
     app.controller('faqController', function($scope) {
         $scope.message = 'FAQ';
+				document.getElementById('brand-logo').style.display = "block";
     });
     app.controller('contactusController', function($scope) {
         $scope.message = 'Contact us!';
+				document.getElementById('brand-logo').style.display = "block";
     });

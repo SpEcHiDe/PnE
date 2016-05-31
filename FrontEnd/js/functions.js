@@ -42,27 +42,3 @@ function sendEMail(){
 		};
 		xhttp.send();
 }
-
-setInterval(function(){
-  if (window.location.hash === "#/"){
-    document.getElementById('brand-logo').style.display = "none";
-    var animation_home = setInterval(function(){
-      var animone = document.getElementById('animone');
-      var animtwo = document.getElementById('animtwo');
-      var animthree = document.getElementById('animthree');
-      setTimeout(function(){
-        animone.click();
-      },3000);
-      setTimeout(function(){
-        animtwo.click();
-      },5000);
-      setTimeout(function(){
-        animthree.click();
-      },5000);
-    }, 10000);
-  }
-  else{
-    document.getElementById('brand-logo').style.display = "block";
-    clearInterval(animation_home);
-  }
-}, 100);
