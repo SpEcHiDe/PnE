@@ -91,6 +91,12 @@ iframe#appanim{
   height: 452px;
 }
 
+iframe#bizanim{
+  width: 450px;
+  height: 285px;
+  overflow: hidden;
+}
+
 .tabs .tab{
   text-transform: none;
   font-size: 2em;
@@ -116,4 +122,8 @@ iframe#appanim{
 .tabs .tab a:hover{
   color: #2196F3;
   border: none;
+}
+
+.footer{
+  padding-top: 2em;
 }
