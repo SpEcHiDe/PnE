@@ -128,8 +128,16 @@ iframe#bizanim{
   padding-top: 2em;
 }
 
-/* codeschool \/ */
+/* card editing BEGIN */
+.card{
+  border-radius: 23%;
+}
+.activator{
+  border-radius: 50%;
+  width: 9em;
+  margin-top: -10px;
+}
 
-@import url('codeschool.css');
-
-/* codeschool /\ */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+  color: #fff;
+}
