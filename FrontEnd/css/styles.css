@@ -22,7 +22,6 @@ body {
 img#logo{
   width: 2em;
   height: 3em;
-  //display: none;
 }
 #mainNav{
   background-color: #fff;
@@ -32,7 +31,7 @@ img#logo{
 .card-panel{
   box-shadow: none;
 }
-#mainNav > div > ul > li > a {
+#mainNav > .container > div > ul > li > a {
   color: #42a5f5;
   margin-right: 3em;
 }

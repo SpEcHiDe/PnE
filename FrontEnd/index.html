@@ -28,48 +28,40 @@
 
 <body ng-controller="mainController">
 
-  <header class="main-header">
-    <div class="container">
-      <div class="row">
-        <nav id="mainNav">
+  <nav id="mainNav" class="navbar">
+      <div class="container">
           <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
               </button>
 
-          <a id="brand-logo" class="navbar-brand" href="#/">
-            <img id="logo" src="img/logo.png">
-            <span id="keito">Keito</span>
-          </a>
+              <a id="brand-logo" class="navbar-brand" href="#/">
+                  <img id="logo" src="img/logo.png">
+                  <span id="keito">Keito</span>
+              </a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav nav-pills pull-right">
-            <li class="first about-item">
-              <a href="#/app"><h3>Keito</h3></a>
-            </li>
-            <li class="contribute-item">
-              <a href="#/biz"><h3>Biz</h3></a>
-            </li>
-            <li class="products-item">
-              <a href="#/faq"><h3>FAQ</h3></a>
-            </li>
-            <li class="last donate-item">
-              <a href="#/contactus"><h3>Contact us</h3></a>
-            </li>
-          </ul>
+              <ul class="nav navbar-nav navbar-right nav-pills pull-right">
+                  <li class="first about-item">
+                      <a href="#/app"><h3>Keito</h3></a>
+                  </li>
+                  <li class="contribute-item">
+                      <a href="#/biz"><h3>Biz</h3></a>
+                  </li>
+                  <li class="products-item">
+                      <a href="#/faq"><h3>FAQ</h3></a>
+                  </li>
+                  <li class="last donate-item">
+                      <a href="#/contactus"><h3>Contact us</h3></a>
+                  </li>
+              </ul>
           </div>
-        </nav>
-        <!--<a id="brand-logo" class="navbar-brand" href="#/">
-          <img id="logo" src="img/logo.png">
-          <span id="keito">Keito</span>
-        </a>-->
       </div>
-    </div>
-  </header>
+  </nav>
 
   <!-- MAIN CONTENT AND INJECTED VIEWS -->
   <div id="main">
