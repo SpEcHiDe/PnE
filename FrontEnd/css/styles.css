@@ -41,9 +41,9 @@ img#brandlogo{
   height: 15em;
 }
 img#android_logo{
-  width: 100%;
   height: 3em;
-  float: left;
+  max-width: 100%;
+  max-height: 100%;
 }
 .item > img {
   display: block;
@@ -54,7 +54,8 @@ img#android_logo{
 }
 img#android_text{
   height: 3em;
-  float: right;
+  max-width: 100%;
+  max-height: 100%;
   border-left: 2px solid #B8C1B7;
   float: left;
   padding-left: 10px;
@@ -68,9 +69,11 @@ img#android_text{
 }
 .glyphicon-chevron-left{
   content: url('../img/left_arrow.png');
+  max-width: 100%;
 }
 .glyphicon-chevron-right{
   content: url('../img/right_arrow.png');
+  max-width: 100%;
 }
 @media screen and (min-width: 768px){
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
@@ -81,19 +84,26 @@ img#android_text{
   }
 }
 
+/*
+http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
+*/
+
 .tab-content iframe{
   width: 320px;
   height: 400px;
+  max-width: 100%;
 }
 
 iframe#appanim{
   width: 570px;
   height: 452px;
+  max-width: 100%;
 }
 
 iframe#bizanim{
   width: 450px;
   height: 285px;
+  max-width: 100%;
   overflow: hidden;
 }
 
