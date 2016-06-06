@@ -9,22 +9,20 @@
         margin: 0;
         padding: 0;
       }
-      #map {
+      #map-canvas1 {
         height: 100%;
       }
     </style>
   </head>
   <body>
+
     <div id="map-canvas1"></div>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
     <script>
 
       /*
         Map contents for keito screen for Pencil and eraser
       */
-
-      // create empty LatLngBounds object
-      google.maps.event.addDomListener(window, 'load', initializeKeito);
 
       function initializeKeito() {
           var locations = [
@@ -38,15 +36,15 @@
               ['Surprise your friends ? : Navigate to your school mates, alumini and coorporates while connected', 25.4358, 81.8463, 'Just for friends', 8],
           ];
           var map = new google.maps.Map(document.getElementById('map-canvas1'), {
+              center: {lat: 20.5937, lng: 78.9629},
               zoom: 4,
-              center: new google.maps.LatLng(20.5937, 78.9629),
               mapTypeId: google.maps.MapTypeId.ROADMAP
           });
           var bounds = new google.maps.LatLngBounds();
           var infowindow = new google.maps.InfoWindow();
           for (i = 0; i < locations.length; i++) {
               var marker = new google.maps.Marker({
-                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                  position: {lat: locations[i][1], lng: locations[i][2]},
                   map: map
               });
               //extend the bounds to include each marker's position
@@ -71,9 +69,11 @@
               map.setZoom(4);
               google.maps.event.removeListener(listener);
           });
-      };
+      }
 
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbsUkw0lcfyFVEqFgkafNY4FRTDryZWIo&callback=initializeKeito" async defer></script>
 
   </body>
 </html>
