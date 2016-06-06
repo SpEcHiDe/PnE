@@ -91,12 +91,16 @@ http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
   width: 320px;
   height: 400px;
   max-width: 100%;
+  overflow: hidden;
+  pointer-events:none;
 }
 
 iframe#appanim{
   width: 570px;
   height: 452px;
   max-width: 100%;
+  overflow: hidden;
+  pointer-events:none;
 }
 
 iframe#bizanim{
@@ -104,6 +108,7 @@ iframe#bizanim{
   height: 285px;
   max-width: 100%;
   overflow: hidden;
+  pointer-events:none;
 }
 
 .tabs .tab{
@@ -150,3 +155,4 @@ iframe#bizanim{
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
   color: #fff;
 }
+/* card editing END */
