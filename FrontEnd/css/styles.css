@@ -142,13 +142,15 @@ iframe#bizanim{
 }
 
 .nav-tabs>li.active>a:hover {
-  color: #2196F3;
+  background-color: #BBDEFB;
+  color: #fff;
   border-style: solid;
   border-color: #9e9e9e;
   border-width: 0px 0px 4px 0px;
 }
 .nav-tabs>li.active>a {
-  color: #2196F3;
+  background-color: #BBDEFB;
+  color: #fff;
   border-style: solid;
   border-color: #9e9e9e;
   border-width: 0px 0px 4px 0px;
