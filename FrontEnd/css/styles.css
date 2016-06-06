@@ -92,7 +92,6 @@ http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
   height: 400px;
   max-width: 100%;
   overflow: hidden;
-  pointer-events:none;
 }
 
 iframe#appanim{
