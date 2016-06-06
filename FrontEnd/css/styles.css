@@ -27,27 +27,24 @@ body {
   visibility: visible;
 }
 
+.card-panel{
+  /*materialize FIX!*/
+  box-shadow: none;
+}
+
 img#logo{
   width: 2em;
   height: 3em;
 }
+
 #mainNav{
   background-color: #fff;
   color: #2196F3;
   box-shadow: none;
 }
-.card-panel{
-  // materialize FIX!
-  box-shadow: none;
-}
 #mainNav > .container > div > ul > li > a {
   color: #42a5f5;
   margin-right: 3em;
-}
-#mainNav > .container > div > button {
-  color: #42a5f5;
-  margin-right: 3em;
-  background-color: #fff;
 }
 
 img#brandlogo{
