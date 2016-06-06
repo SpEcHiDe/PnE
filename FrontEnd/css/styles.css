@@ -82,13 +82,24 @@ img#android_text{
   text-align: left;
 }
 .glyphicon-chevron-left{
-  content: url('../img/left_arrow.png');
   max-width: 100%;
+  display: inline-block;
+  content: none;
+  background: url('../img/left_arrow.png') no-repeat 0 0;
+  background-size: 100%;
 }
+/*
+ thank you: http://stackoverflow.com/questions/12082948/resize-the-content-propertys-image
+ for solving this: https://support.mozilla.org/en-US/questions/897824
+*/
 .glyphicon-chevron-right{
-  content: url('../img/right_arrow.png');
   max-width: 100%;
+  display: inline-block;
+  content: none;
+  background: url('../img/right_arrow.png') no-repeat 0 0;
+  background-size: 100%;
 }
+
 @media screen and (min-width: 768px){
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
     width: 75px;

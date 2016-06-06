@@ -529,10 +529,10 @@ th {
   content: "\e078";
 }
 .glyphicon-chevron-left:before {
-  content: "\e079";
+  /*content: "\e079";*/
 }
 .glyphicon-chevron-right:before {
-  content: "\e080";
+  /*content: "\e080";*/
 }
 .glyphicon-plus-sign:before {
   content: "\e081";
