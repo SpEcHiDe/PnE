@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=ABeeZee);
+/* latin */
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(../fonts/TV7JXr7j4tW7mgYreANhGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 body,html {
   font-family: 'ABeeZee', sans-serif;
@@ -19,6 +26,7 @@ body {
 #brand-logo:hover #keito{
   visibility: visible;
 }
+
 img#logo{
   width: 2em;
   height: 3em;
@@ -29,12 +37,19 @@ img#logo{
   box-shadow: none;
 }
 .card-panel{
+  // materialize FIX!
   box-shadow: none;
 }
 #mainNav > .container > div > ul > li > a {
   color: #42a5f5;
   margin-right: 3em;
 }
+#mainNav > .container > div > button {
+  color: #42a5f5;
+  margin-right: 3em;
+  background-color: #fff;
+}
+
 img#brandlogo{
   width: 15em;
   height: 15em;
