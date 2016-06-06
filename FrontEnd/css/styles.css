@@ -75,6 +75,9 @@ img#android_text{
 .list-group-item-text{
   text-align: left;
 }
+.list-group{
+  box-shadow: none;
+}
 .grey-text{
   text-align: left;
 }
