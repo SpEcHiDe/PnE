@@ -8,7 +8,7 @@ body {
 
 .scientific-world {
     min-width: 570px;
-    background-color: #47505B;
+    background-color: #FFF;
     margin: 0;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@ body {
     width: 570px;
     height: 345px;
     padding-top: 90px;
-    background: #FCB040 url(wrld3.svg) 0px 120px no-repeat;
+    background: #FFF url(wrld3.svg) 0px 120px no-repeat;
 }
 
 .bubbles {
