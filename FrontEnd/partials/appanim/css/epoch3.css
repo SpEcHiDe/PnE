@@ -7,7 +7,7 @@ body {
 }
 
 .scientific-world {
-    min-width: 570px;
+    min-width: 450px;
     background-color: #FFF;
     margin: 0;
     overflow: hidden;
@@ -15,10 +15,10 @@ body {
 
 .scientific-world > div {
     position: relative;
-    width: 570px;
-    height: 345px;
-    padding-top: 90px;
-    background: #FFF url(wrld3.svg) 0px 120px no-repeat;
+    width: 450px;
+    height: 285px;
+    padding-top: 0px;
+    background: #FFF url(wrld3.svg) 0px 30px no-repeat;
 }
 
 .bubbles {
@@ -95,7 +95,7 @@ body {
     width: 130px;
     height: 80px;
     left: 600px;
-    top: 30px;
+    top: -10px;
     background: url(plane.svg) 0px 0px no-repeat;
 }
 
@@ -113,7 +113,7 @@ body {
     width: 50px;
     height: 50px;
     left: 115px;
-    top: 185px;
+    top: 145px;
     background: url(antenna.svg) 0px 0px no-repeat;
     -webkit-transform-origin: 40% 80%;
             transform-origin: 40% 80%;
@@ -130,8 +130,8 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 350px;
-    top: 110px;
+    left: 275px;
+    top: 25px;
     background-image: url(fog-1.svg);
 }
 
@@ -139,7 +139,7 @@ body {
     position: absolute;
     width: 50px;
     height: 70px;
-    left: 420px;
-    top: 100px;
+    left: 320px;
+    top: 10px;
     background-image: url(fog-2.svg);
 }

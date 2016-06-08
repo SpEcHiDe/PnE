@@ -121,8 +121,8 @@ http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
 }
 
 iframe#appanim{
-  width: 570px;
-  height: 452px;
+  width: 450px;
+  height: 285px;
   max-width: 100%;
   overflow: hidden;
   pointer-events:none;
