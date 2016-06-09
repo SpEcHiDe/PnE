@@ -1,5 +1,7 @@
 var app = angular.module('keito', ['ngRoute']);
 
+var animation_home;
+
 // create the controller and inject Angular's $scope
 app.controller('mainController', function($scope) {
 
@@ -47,7 +49,7 @@ app.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'HOME';
 				document.getElementById('brand-logo').style.display = "none";
-				var animation_home = setInterval(function(){
+				animation_home = setInterval(function(){
 		      var animone = document.getElementById('animone');
 		      var animtwo = document.getElementById('animtwo');
 		      var animthree = document.getElementById('animthree');
@@ -65,16 +67,20 @@ app.controller('mainController', function($scope) {
 		app.controller('appController', function($scope) {
         $scope.message = 'APP -- under construction';
 				document.getElementById('brand-logo').style.display = "block";
+				clearInterval(animation_home);
     });
 		app.controller('bizController', function($scope) {
         $scope.message = 'BIZ';
 				document.getElementById('brand-logo').style.display = "block";
+				clearInterval(animation_home);
     });
     app.controller('faqController', function($scope) {
         $scope.message = 'FAQ';
 				document.getElementById('brand-logo').style.display = "block";
+				clearInterval(animation_home);
     });
     app.controller('contactusController', function($scope) {
         $scope.message = 'Contact us!';
 				document.getElementById('brand-logo').style.display = "block";
+				clearInterval(animation_home);
     });
