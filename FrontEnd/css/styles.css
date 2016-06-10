@@ -171,7 +171,7 @@ iframe#bizanim{
 
 /* card editing BEGIN */
 .card{
-  border-radius: 23%;
+  border-radius: 23% 23% 0px 0px;
 }
 .activator{
   border-radius: 50%;
