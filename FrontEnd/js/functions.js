@@ -3,10 +3,10 @@ function countChar(val, lav){
 	var len = val.value.length;
 	var the_real_display = lav;
 	if(len > 150){
-
+		the_real_display.style.color = "red";
 	}
 	else{
-
+		the_real_display.style.color = "#fff";
 	}
 	the_real_display.innerHTML = len + "/150";
 }

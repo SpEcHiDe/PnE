@@ -191,8 +191,54 @@ iframe#bizanim{
 
 /* FORMS */
 
-.form-group > *{
+/* ==> https://css-tricks.com/snippets/css/style-placeholder-text/ */
+::-webkit-input-placeholder {
+   color: #fff;
+   background-color: #2196F3;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+   background-color: #2196F3;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+   background-color: #2196F3;
+}
+
+:-ms-input-placeholder {
+   color: #fff;
+   background-color: #2196F3;
+}
+input[placeholder], [placeholder], *[placeholder] {
+  color: #fff;
   background-color: #2196F3;
+}
+
+.form-group > input{
+  background-color: #2196F3;
+  color: #fff;
+  border-radius: 10%;
+}
+
+.form-group > textarea{
+  background-color: #2196F3;
+  border: none;
+  outline: none;
+}
+
+#ccdispqwe{
+  text-align: right;
+  color: #fff;
+  /* http://jsfiddle.net/2uwDT/2/ */
+  display: block;
+}
+
+#taSplNoqwe{
+  background-color: #2196F3;
+  color: #fff;
+  border-radius: 10%;
 }
 
 /* FORMS */
