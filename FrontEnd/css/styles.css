@@ -188,3 +188,11 @@ iframe#bizanim{
   color: #9e9e9e;
   cursor: text;
 }
+
+/* FORMS */
+
+.form-group > *{
+  background-color: #2196F3;
+}
+
+/* FORMS */
