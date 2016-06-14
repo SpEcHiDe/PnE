@@ -10,12 +10,12 @@ body {
   background: #fef2d8;
 }
 .background {
-  position: relative;
+  /*position: relative;*/
   margin: 20px;
   width: 775px;
   height: 250px;
   text-align: center;
-  padding: 30px;
+  /*padding: 30px;*/
   border-radius: 10px;
 }
 .frame {
