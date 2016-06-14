@@ -1,9 +1,14 @@
 
 function countChar(val, lav){
-	console.log(val);
 	var len = val.value.length;
 	var the_real_display = lav;
-	the_real_display.value = len;
+	if(len > 150){
+
+	}
+	else{
+
+	}
+	the_real_display.innerHTML = len + "/150";
 }
 
 function sendEMail(){

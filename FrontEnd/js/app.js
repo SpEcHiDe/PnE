@@ -83,5 +83,4 @@ app.controller('mainController', function($scope) {
         $scope.message = 'Contact us!';
 				document.getElementById('brand-logo').style.display = "block";
 				clearInterval(animation_home);
-				document.getElementById('msg').onkeydown = countChar(document.getElementById('msg'), document.getElementById('ccdispqwe'));
     });
