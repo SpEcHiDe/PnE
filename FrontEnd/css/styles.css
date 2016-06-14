@@ -183,3 +183,8 @@ iframe#bizanim{
   color: #fff;
 }
 /* card editing END */
+
+.list-group-item-text > span > a {
+  color: #9e9e9e;
+  cursor: text;
+}

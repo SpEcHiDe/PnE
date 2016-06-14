@@ -1,4 +1,11 @@
 
+function countChar(val, lav){
+	console.log(val);
+	var len = val.value.length;
+	var the_real_display = lav;
+	the_real_display.value = len;
+}
+
 function sendEMail(){
 
 		var url = "../BackEnd/send-mail.php";
