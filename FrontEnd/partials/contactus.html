@@ -15,13 +15,13 @@
         <div class="col-sm-6">
           <form role="form" method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data" onsubmit="sendEMail(); return false;">
               <div class='form-group'>
-                  <input type="text" placeholder=" Name" class="form-control" id="fromname" name="fromname">
+                  <input type="text" placeholder=" Name" class="form-control" id="fromname" name="fromname" required>
               </div>
               <div class='form-group'>
-                  <input type="email" placeholder=" Email Address" class="form-control" id="fromemail" name="fromemail">
+                  <input type="email" placeholder=" Email Address" class="form-control" id="fromemail" name="fromemail" required>
               </div>
               <div class='form-group' id="taSplNoqwe">
-                  <textarea placeholder="Type here" onkeyup="countChar(this, document.getElementById('ccdispqwe'))" class="form-control" id="msg" name="msg" cols="40" rows="5"></textarea>
+                  <textarea placeholder="Type here" onkeyup="countChar(this, document.getElementById('ccdispqwe'))" class="form-control" id="msg" name="msg" cols="40" rows="5" required></textarea>
                   <span id="ccdispqwe">0/150</span>
               </div>
               <button type="submit" name='emailBtn' class='btn form-control'>SEND</button>
