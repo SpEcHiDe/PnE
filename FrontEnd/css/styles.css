@@ -41,6 +41,7 @@ img#logo{
   background-color: #fff;
   color: #2196F3;
   box-shadow: none;
+  z-index: 50;
 }
 #mainNav > .container > div > ul > li > a {
   color: #42a5f5;
