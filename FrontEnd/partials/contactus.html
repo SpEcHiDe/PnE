@@ -12,22 +12,22 @@
 
     <div style="background-color:#BBDEFB;padding-top:5em;padding-bottom:5em;">
       <div class="container row">
-        <div class="col-sm-6" style="padding-right: 0em;">
-          <form role="form" method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+        <div class="col-sm-6">
+          <form role="form" method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data" onsubmit="sendEMail(); return false;">
               <div class='form-group'>
-                  <input type="text" placeholder="Name" class="form-control" id="fromname" name="fromname">
+                  <input type="text" placeholder=" Name" class="form-control" id="fromname" name="fromname">
               </div>
               <div class='form-group'>
-                  <input type="email" placeholder="Email Address" class="form-control" id="fromemail" name="fromemail">
+                  <input type="email" placeholder=" Email Address" class="form-control" id="fromemail" name="fromemail">
               </div>
               <div class='form-group' id="taSplNoqwe">
                   <textarea placeholder="Type here" onkeyup="countChar(this, document.getElementById('ccdispqwe'))" class="form-control" id="msg" name="msg" cols="40" rows="5"></textarea>
                   <span id="ccdispqwe">0/150</span>
               </div>
-              <button type="button" name='emailBtn' class='btn form-control' onClick="sendEMail()">SEND</button>
+              <button type="submit" name='emailBtn' class='btn form-control'>SEND</button>
           </form>
         </div>
-        <div class="col-sm-6" style="padding-left: 15em;">
+        <div class="col-sm-6">
           <div class="list-group grey-text lighten-2">
               <p class="list-group-item-text">Keito India Pvt Ltd</p>
               <p class="list-group-item-text">Pashan</p>
