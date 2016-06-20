@@ -62,6 +62,11 @@ img#logo{
 #mainNav > .container > div > button > .icon-bar {
   background-color: #FFF;
 }
+/* http://techbuzzes.com/2014/01/airtel-gprs-manual-settings-mobile-internet/ */
+.nav > li > a > h3:hover {
+  color: #fff;
+  border-top: .025em solid #fff;
+}
 img#brandlogo{
   width: 15em;
   height: 15em;
