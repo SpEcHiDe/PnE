@@ -30,15 +30,19 @@ var sendData = function(type, URL, formData, callBack){
 };
 
 function sendEMail(){
-		var url = "../BackEnd/send-mail.php";
+	var url = "../BackEnd/send-mail.php";
 
-		var from = document.getElementById('fromname').value + "<" + document.getElementById('fromemail').value + ">";
-		var to = "TO NAME <toname@todomain.totld>";
-		var sub = "PnE subject";
-		var msg = document.getElementById('msg').value;
-		var formdata = "from="+from+"&to="+to+"&sub="+sub+"&msg="+msg+"";
-		
-		sendData("POST", url, formdata, function(r){
-			console.log(r);
-		});
+	var from = document.getElementById('fromname').value + "<" + document.getElementById('fromemail').value + ">";
+	var to = "TO NAME <toname@todomain.totld>";
+	var sub = "PnE subject";
+	var msg = document.getElementById('msg').value;
+	var formdata = "from="+from+"&to="+to+"&sub="+sub+"&msg="+msg+"";
+
+	sendData("POST", url, formdata, function(r){
+		console.log(r);
+	});
 }
+
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});

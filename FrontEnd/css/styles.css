@@ -12,13 +12,18 @@ body,html {
   height: 100%;
 }
 body {
-  padding-top: 50px;
+  padding-top: 60px;
 }
-
-#main{
-  padding-top: 64px;
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
 }
-
+@media (min-width: 981px) {
+  body {
+    padding-top: 60px;
+  }
+}
 #brand-logo{
   font-size: 30px;
   text-align:center;
@@ -37,6 +42,9 @@ body {
 img#logo{
   width: 2em;
   height: 3em;
+}
+.navbar-default{
+  border-color: #fff;
 }
 #mainNav{
   background-color: #fff;
