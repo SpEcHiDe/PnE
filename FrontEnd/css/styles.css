@@ -15,28 +15,29 @@ body {
   padding-top: 50px;
 }
 
+#main{
+  padding-top: 64px;
+}
+
 #brand-logo{
-  font-size: 13px;
+  font-size: 30px;
   text-align:center;
 }
 #brand-logo #keito{
-  max-width: 0px;
+  max-width: 0em;
   visibility: hidden;
 }
 #brand-logo:hover #keito{
   visibility: visible;
 }
-
 .card-panel{
   /*materialize FIX!*/
   box-shadow: none;
 }
-
 img#logo{
   width: 2em;
   height: 3em;
 }
-
 #mainNav{
   background-color: #fff;
   color: #2196F3;
@@ -47,7 +48,12 @@ img#logo{
   color: #42a5f5;
   margin-right: 3em;
 }
-
+#mainNav > .container > div > button {
+  background-color: #2196F3;
+}
+#mainNav > .container > div > button > .icon-bar {
+  background-color: #FFF;
+}
 img#brandlogo{
   width: 15em;
   height: 15em;
@@ -100,7 +106,6 @@ img#android_text{
   background: url('../img/right_arrow.png') no-repeat 0 0;
   background-size: 100%;
 }
-
 @media screen and (min-width: 768px){
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
     width: 75px;
@@ -109,18 +114,15 @@ img#android_text{
     font-size: 30px;
   }
 }
-
 /*
 http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
 */
-
 .tab-content iframe{
   width: 320px;
   height: 400px;
   max-width: 100%;
   overflow: hidden;
 }
-
 iframe#appanim{
   width: 450px;
   height: 285px;
@@ -128,7 +130,6 @@ iframe#appanim{
   overflow: hidden;
   pointer-events:none;
 }
-
 iframe#bizanim{
   width: 450px;
   height: 285px;
@@ -136,12 +137,10 @@ iframe#bizanim{
   overflow: hidden;
   pointer-events:none;
 }
-
 .tabs .tab{
   text-transform: none;
   font-size: 2em;
 }
-
 .nav-tabs>li.active>a:hover {
   background-color: #BBDEFB;
   color: #fff;
@@ -160,16 +159,13 @@ iframe#bizanim{
   color: #2196F3;
   border: none;
 }
-
 .tabs .tab a:hover{
   color: #2196F3;
   border: none;
 }
-
 .footer{
   padding-top: 2em;
 }
-
 /* card editing BEGIN */
 .card{
   border-radius: 23% 23% 0px 0px;
@@ -179,35 +175,28 @@ iframe#bizanim{
   width: 9em;
   margin-top: -10px;
 }
-
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
   color: #fff;
 }
 /* card editing END */
-
 .list-group-item-text > span > a {
   color: #9e9e9e;
   cursor: text;
 }
-
 /* FORMS */
-
 /* ==> https://css-tricks.com/snippets/css/style-placeholder-text/ */
 ::-webkit-input-placeholder {
    color: #fff !important;
    background-color: #2196F3;
 }
-
 :-moz-placeholder { /* Firefox 18- */
    color: #fff !important;
    background-color: #2196F3;
 }
-
 ::-moz-placeholder {  /* Firefox 19+ */
    color: #fff !important;
    background-color: #2196F3;
 }
-
 :-ms-input-placeholder {
    color: #fff !important;
    background-color: #2196F3;
@@ -216,39 +205,32 @@ input[placeholder], [placeholder], *[placeholder] {
   color: #fff;
   background-color: #2196F3;
 }
-
 .form-group > input{
   background-color: #2196F3;
   color: #fff;
   border-radius: 10%;
 }
-
 .form-group > textarea{
   background-color: #2196F3;
   border: none;
   outline: none;
 }
-
 form > .btn{
   background-color: #2196F3;
   letter-spacing: 0.75em;
 }
-
 form > .btn:hover{
   background-color: #2196F3;
 }
-
 #ccdispqwe{
   text-align: right;
   color: #fff;
   /* http://jsfiddle.net/2uwDT/2/ */
   display: block;
 }
-
 #taSplNoqwe{
   background-color: #2196F3;
   color: #fff;
   border-radius: 10%;
 }
-
 /* FORMS */
