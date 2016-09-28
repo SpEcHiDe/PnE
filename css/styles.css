@@ -1,296 +1,307 @@
 /* latin */
 @font-face {
-  font-family: 'ABeeZee';
-  font-style: normal;
-  font-weight: 400;
-  src: local('ABeeZee'), local('ABeeZee-Regular'), url(../fonts/TV7JXr7j4tW7mgYreANhGQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ABeeZee'), local('ABeeZee-Regular'), url(../fonts/TV7JXr7j4tW7mgYreANhGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
-body,html {
-  /**font-family: 'Roboto', sans-serif !important;*/
-  /*font-family: 'Open Sans Condensed', sans-serif; !important;*/
-  font-family: 'Poiret One', cursive !important;
-  font-weight: bold !important;
-  height: 100%;
+.textenlarger {
+    font-size: 1.3em;
 }
-@media only screen and (max-width: 500px) 
-{
-  #tab_hide
-  {
-    display: none;
-  }    
+body,
+html {
+    /**font-family: 'Roboto', sans-serif !important;*/
+    /*font-family: 'Open Sans Condensed', sans-serif; !important;*/
+    font-family: 'Poiret One', cursive !important;
+    font-weight: bold !important;
+    height: 100%;
 }
-
-p,li
-{
-  letter-spacing: 1px;
-  color: black !important;
+@media only screen and (max-width: 500px) {
+    #tab_hide {
+        display: none;
+    }
 }
-h2,h4,h5
-{
-  color: #1093BF!important;
+p,
+li {
+    letter-spacing: 1px;
+    color: black !important;
 }
-body {
-  padding-top: 60px;
+h2,
+h4,
+h5 {
+    color: #1093BF!important;
+}
+.mainContainer {
+    padding-top: 60px;
 }
 @media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
+    .mainContainer {
+        padding-top: 0px;
+    }
 }
 @media (min-width: 981px) {
-  body {
-    padding-top: 60px;
-  }
+    .mainContainer {
+        padding-top: 60px;
+    }
 }
-#brand-logo{
-  font-size: 30px;
-  text-align:center;
+#brand-logo {
+    font-size: 30px;
+    text-align: center;
 }
-#brand-logo #keito{
-  max-width: 0em;
-  visibility: hidden;
+#brand-logo #keito {
+    max-width: 0em;
+    visibility: hidden;
 }
-#brand-logo:hover #keito{
-  visibility: visible;
+#brand-logo:hover #keito {
+    visibility: visible;
 }
-.card-panel{
-  /*materialize FIX!*/
-  box-shadow: none;
+.card-panel {
+    /*materialize FIX!*/
+
+    box-shadow: none;
 }
-img#logo{
-  width: 2em;
-  height: 2em;
+img#logo {
+    width: 2em;
+    height: 2em;
 }
-.navbar-default{
-  border-color: #fff;
+.navbar-default {
+    border-color: #fff;
 }
-#mainNav{
-  background-color: #fff;
-  color: #1093BF;
-  box-shadow: none;
-  z-index: 50;
+#mainNav {
+    background-color: transparent;
+    color: #1093BF;
+    box-shadow: none;
+    z-index: 50;
+    border: 0px;
 }
 #mainNav > .container > div > ul > li > a {
-  color: #1093BF;
-  margin-right: 3em;
+    color: #1093BF;
+    margin-right: 3em;
 }
 #mainNav > .container > div > button {
-  background-color: #1093BF;
+    background-color: #1093BF;
 }
 #mainNav > .container > div > button > .icon-bar {
-  background-color: #FFF;
+    background-color: #FFF;
 }
 /* http://techbuzzes.com/2014/01/airtel-gprs-manual-settings-mobile-internet/ */
-.nav > li > a > h3:hover {
-  color: #fff;
-  border-top: .025em solid #fff;
+.navItems:hover {
+    color: #fff;
+    text-decoration: none;
 }
-img#brandlogo{
-  width: 15em;
-  height: 15em;
+.navItems > li:hover,
+.navItems > a:hover,
+.navItems > h3:hover {
+    color: #fff;
+    text-decoration: none;
+    /*border-top: .025em solid #fff;*/
 }
-img#android_logo{
-  height:3em;
-  width: 3em;
-  max-width: 100%;
-  max-height: 100%;
+.navItems > li > a > h3:hover {
+    color: #fff;
+    text-decoration: none;
+    /*border-top: .025em solid #fff;*/
+}
+img#brandlogo {
+    width: 15em;
+    height: 15em;
+}
+img#android_logo {
+    height: 3em;
+    width: 3em;
+    max-width: 100%;
+    max-height: 100%;
 }
 .item > img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
-  height: auto
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto
 }
-img#android_text{
-  height: 3em;
-  max-width: 100%;
-  max-height: 100%;
-  border-left: 2px solid #B8C1B7;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+img#android_text {
+    height: 3em;
+    max-width: 100%;
+    max-height: 100%;
+    border-left: 2px solid #B8C1B7;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.list-group-item-text{
-  text-align: left;
+.list-group-item-text {
+    text-align: left;
 }
-.list-group{
-  box-shadow: none;
+.list-group {
+    box-shadow: none;
 }
-.grey-text{
-  text-align: left;
+.grey-text {
+    text-align: left;
 }
-.glyphicon-chevron-left{
-  max-width: 100%;
-  display: inline-block;
-  content: none;
-  background: url('../img/left_arrow.png') no-repeat 0 0;
-  background-size: 100%;
+.glyphicon-chevron-left {
+    max-width: 100%;
+    display: inline-block;
+    content: none;
+    background: url('../img/left_arrow.png') no-repeat 0 0;
+    background-size: 100%;
 }
 /*
  thank you: http://stackoverflow.com/questions/12082948/resize-the-content-propertys-image
  for solving this: https://support.mozilla.org/en-US/questions/897824
 */
-.glyphicon-chevron-right{
-  max-width: 100%;
-  display: inline-block;
-  content: none;
-  background: url('../img/right_arrow.png') no-repeat 0 0;
-  background-size: 100%;
+.glyphicon-chevron-right {
+    max-width: 100%;
+    display: inline-block;
+    content: none;
+    background: url('../img/right_arrow.png') no-repeat 0 0;
+    background-size: 100%;
 }
-@media screen and (min-width: 768px){
-  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
-    width: 75px;
-    height: 75px;
-    margin-top: -30px;
-    font-size: 30px;
-  }
+@media screen and (min-width: 768px) {
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 75px;
+        height: 75px;
+        margin-top: -30px;
+        font-size: 30px;
+    }
 }
-/*
-http://stackoverflow.com/questions/17838607/making-an-iframe-responsive
-*/
-.tab-content iframe{
-  width: 320px;
-  height: 400px;
-  max-width: 100%;
-  overflow: hidden;
+/* http://stackoverflow.com/questions/17838607/making-an-iframe-responsive */
+.tab-content iframe {
+    width: 320px;
+    height: 400px;
+    max-width: 100%;
+    overflow: hidden;
 }
-iframe#appanim{
-  width: 450px;
-  height: 285px;
-  max-width: 100%;
-  overflow: hidden;
-  pointer-events:none;
+iframe#appanim {
+    width: 450px;
+    height: 285px;
+    max-width: 100%;
+    overflow: hidden;
+    pointer-events: none;
 }
-iframe#bizanim{
-  width: 450px;
-  height: 285px;
-  max-width: 100%;
-  overflow: hidden;
-  pointer-events:none;
+iframe#bizanim {
+    width: 450px;
+    height: 285px;
+    max-width: 100%;
+    overflow: hidden;
+    pointer-events: none;
 }
-.tabs .tab{
-  text-transform: none;
-  font-size: 2em;
+.tabs .tab {
+    text-transform: none;
+    font-size: 2em;
 }
 .nav-tabs>li.active>a:hover {
-  background-color: #BBDEFB;
-  color: #fff;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 0px 0px 4px 0px;
+    background-color: #BBDEFB;
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0px 0px 4px 0px;
 }
 .nav-tabs>li.active>a {
-  background-color: #BBDEFB;
-  color: #fff;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 0px 0px 4px 0px;
+    background-color: #BBDEFB;
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0px 0px 4px 0px;
 }
-.tabs .tab a{
-  color: #1093BF;
-  border: none;
+.tabs .tab a {
+    color: #1093BF;
+    border: none;
 }
-.tabs .tab a:hover{
-  color: #1093BF;
-  border: none;
+.tabs .tab a:hover {
+    color: #1093BF;
+    border: none;
 }
-.footer{
-  padding-top: 2em;
+.footer {
+    padding-top: 2em;
 }
 /* card editing BEGIN */
-.card{
-  border-radius: 23% 23% 0px 0px;
+.card {
+    border-radius: 23% 23% 0px 0px;
 }
-.activator{
-  border-radius: 50%;
-  width: 9em;
-  margin-top: 40px;*/
+.activator {
+    border-radius: 50%;
+    width: 9em;
+    margin-top: 40px;
 }
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
-  color: #fff;
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #fff;
 }
 /* card editing END */
 .list-group-item-text > span > a {
-  color: #9e9e9e;
-  cursor: text;
+    color: #9e9e9e;
+    cursor: text;
 }
 /* FORMS */
 /* ==> https://css-tricks.com/snippets/css/style-placeholder-text/ */
 ::-webkit-input-placeholder {
-   color: #fff !important;
-   background-color: #1093BF;
+    color: #fff !important;
+    background-color: #1093BF;
 }
-:-moz-placeholder { /* Firefox 18- */
-   color: #fff !important;
-   background-color: #1093BF;
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff !important;
+    background-color: #1093BF;
 }
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff !important;
-   background-color: #1093BF;
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff !important;
+    background-color: #1093BF;
 }
 :-ms-input-placeholder {
-   color: #fff !important;
-   background-color: #1093BF;
+    color: #fff !important;
+    background-color: #1093BF;
 }
-input[placeholder], [placeholder], *[placeholder] {
-  color: #fff;
-  background-color: #1093BF;
+input[placeholder],
+[placeholder],
+*[placeholder] {
+    color: #fff;
+    background-color: #1093BF;
 }
-.form-group > input{
-  background-color: #1093BF;
-  color: #fff;
-  border-radius: 10%;
+.form-group > input {
+    background-color: #1093BF;
+    color: #fff;
+    border-radius: 10%;
 }
-.form-group > textarea{
-  background-color: #1093BF;
-  border: none;
-  outline: none;
+.form-group > textarea {
+    background-color: #1093BF;
+    border: none;
+    outline: none;
 }
-form > .btn{
-  background-color: #1093BF;
-  letter-spacing: 0.75em;
+form > .btn {
+    background-color: #1093BF;
+    letter-spacing: 0.75em;
 }
-form > .btn:hover{
-  background-color: #1093BF;
+form > .btn:hover {
+    background-color: #1093BF;
 }
-#ccdispqwe{
-  text-align: right;
-  color: #fff;
-  /* http://jsfiddle.net/2uwDT/2/ */
-  display: block;
+#ccdispqwe {
+    text-align: right;
+    color: #fff;
+    /* http://jsfiddle.net/2uwDT/2/ */
+    display: block;
 }
-#taSplNoqwe{
-  background-color: #1093BF;
-  color: #fff;
-  border-radius: 10%;
+#taSplNoqwe {
+    background-color: #1093BF;
+    color: #fff;
+    border-radius: 10%;
 }
 /* FORMS */
-
-
-.card-pading
-{
-  padding-right: 0 !important;
+.card-pading {
+    padding-right: 0 !important;
 }
-.i-mar
-{
-  margin-top: 40px;
-  margin-left: 0!important;
+.i-mar {
+    margin-top: 40px;
+    margin-left: 0!important;
 }
-
-
-
-
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 320px; 
-    height: 400px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
-
-#slideshow > div { 
-    position: absolute; 
+#slideshow > div {
+    position: absolute;
 }

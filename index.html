@@ -5,28 +5,27 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='apple-mobile-web-app-capable' content='yes' />
-
+        <!-- general share dialog -->
         <meta name="description" content="Keito developed for PencilAndErasers by Shrimadhav U K">
         <meta name="keywords" content="relevant, keywords, go, here">
-        <meta name="author" content="Shrimadhav U K">
-
+        <meta name="author" content="pencil and eraser">
+        <!-- facebook open graph -->
         <meta property="og:title" content="Keito" />
         <meta property="og:type" content="Website" />
-        <meta property="og:description" content="Leveraging Trust and Connectivity" />
+        <meta property="og:description" content="Leveraging Trust and Connectivity, connectivity, collaboration, user experience, team based" />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:image" content="./img/logo.png" />
-
+        <!-- twitter cards -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@SpEcHiDe">
-        <meta name="twitter:creator" content="@SpEcHiDe">
+        <meta name="twitter:site" content="@atpencilanderaser">
+        <meta name="twitter:creator" content="@atpencilanderaser">
         <meta name="twitter:title" content="Keito">
         <meta name="twitter:description" content="Leveraging Trust and Connectivity">
         <meta name="twitter:image" content="./img/logo.png">
         <meta name="twitter:image:alt" content="Keito">
-
         <!-- icon for mobile browsers -->
         <link rel='shortcut icon' type='image/png' href='img/logo.png' />
-        <title>Keito</title>
+        <title>Keito | Keep in Touch</title>
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <!-- bootstrap css -->
         <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
@@ -43,101 +42,103 @@
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-            <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
-            <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
-        <![endif]-->
+                <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+                <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+            <![endif]-->
         <script type="text/javascript" src='js/jquery.min.js'></script>
         <script type="text/javascript">
-          $(window).load(function(){
-            $(".page-load-spinner").fadeOut("slow");
-          });
+            $(window).load(function() {
+                $(".page-load-spinner").fadeOut("slow");
+            });
         </script>
         <script type="text/javascript">
-          $("#slideshow > div:gt(0)").hide();
-          setInterval(function() {
-            $('#slideshow > div:first')
-              .fadeOut(1000)
-              .next()
-              .fadeIn(1000)
-              .end()
-              .appendTo('#slideshow');
-          },  3000);
+            $("#slideshow > div:gt(0)").hide();
+            setInterval(function() {
+                $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+            }, 3000);
         </script>
     </head>
     <body ng-controller="mainController">
-      <div class="page-load-spinner">
-        <div class="loader-box">
-          <div class="loader">
-                <div class="element-animation">
-                <img src="img/Strip.png" width="480" height="100" style="margin-left: -5px; margin-top:-8px;">
+        <div class="mainContainer" ng-style="{'background-image': 'url(' + imageName + ')'}">
+            <div class="page-load-spinner">
+                <div class="loader-box">
+                    <div class="loader">
+                        <div class="element-animation">
+                            <img src="img/Strip.png" width="480" height="100" style="margin-left: -5px; margin-top:-8px;">
+                        </div>
+                    </div>
+                    <ul class="labels">
+                        <li class="label">Loading...</li>
+                        <li class="label">Connectivity...</li>
+                        <li class="label">Collaboration...</li>
+                        <li class="label">Communication...</li>
+                    </ul>
                 </div>
-          </div>
-          <ul class="labels">
-            <li class="label">Loading...</li>
-            <li class="label">Connectivity...</li>
-            <li class="label">Collaboration...</li>
-            <li class="label">Communication...</li>
-          </ul>
+            </div>
+            <nav id="mainNav" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="brand-logo" class="navbar-brand" href="#/">
+                            <img id="logo" src="img/logo.png" alt="Keito">
+                            <span id="keito">Keito</span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse  navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-pills pull-right">
+                            <li class="first about-item">
+                                <a href="#/app"><h3>Keito</h3></a>
+                            </li>
+                            <li class="contribute-item">
+                                <a href="#/biz"><h3>Biz</h3></a>
+                            </li>
+                            <li class="products-item">
+                                <a href="#/faq"><h3>FAQ</h3></a>
+                            </li>
+                            <li class="last donate-item">
+                                <a href="#/contactus"><h3>Contact us</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- MAIN CONTENT AND INJECTED VIEWS -->
+            <div id="main">
+                <!-- angular templating -->
+                <!-- this is where content will be injected -->
+                <div ng-view></div>
+            </div>
         </div>
-      </div>
-      <nav id="mainNav" class="navbar navbar-default">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a id="brand-logo" class="navbar-brand" href="#/">
-                      <img id="logo" src="img/logo.png" alt="Keito">
-                      <span id="keito">Keito</span>
-                  </a>
-              </div>
-              <div class="collapse navbar-collapse  navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="bs-example-navbar-collapse-1">
-                  <ul class="nav nav-pills pull-right">
-                      <li class="first about-item">
-                          <a href="#/app"><h3>Keito</h3></a>
-                      </li>
-                      <li class="contribute-item">
-                          <a href="#/biz"><h3>Biz</h3></a>
-                      </li>
-                      <li class="products-item">
-                          <a href="#/faq"><h3>FAQ</h3></a>
-                      </li>
-                      <li class="last donate-item">
-                          <a href="#/contactus"><h3>Contact us</h3></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      <!-- MAIN CONTENT AND INJECTED VIEWS -->
-      <div id="main">
-          <!-- angular templating -->
-          <!-- this is where content will be injected -->
-          <div ng-view></div>
-          <div class="container row">
+        <div class="container row">
             <footer class="footer">
-              <p class="text-muted pull-left grey-text lighten-2">copyright &copy; 2016 pencilanderaser enterprises</p>
+                <p class="text-muted pull-left grey-text lighten-2">copyright &copy; 2016 pencilanderaser enterprises</p>
             </footer>
-          </div>
-      </div>
-      <!-- jQuery library -->
-      <script type="text/javascript" src='js/jquery.min.js'></script>
-      <!-- Latest compiled JavaScript -->
-      <script type="text/javascript" src='js/bootstrap.min.js'></script>
-      <!-- http://www.jqueryscript.net/demo/jQuery-Plugin-For-Off-canvas-Bootstrap-Navigation/ -->
-      <script type="text/javascript" src='js/bootstrap.offcanvas.js'></script>
-      <!-- Compiled and minified JavaScript -->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <!-- THE angularJS -->
-      <script type="text/javascript" src='js/angular.min.js'></script>
-      <!-- ngRoute -->
-      <script type="text/javascript" src='js/angular-route.js'></script>
-      <!-- custom Functions -->
-      <script type="text/javascript" src='js/functions.js'></script>
-      <!-- THE angularJS -->
-      <script type="text/javascript" src='js/app.js'></script>
+        </div>
+        <!-- jQuery library -->
+        <script type="text/javascript" src='js/jquery.min.js'></script>
+        <!-- Latest compiled JavaScript -->
+        <script type="text/javascript" src='js/bootstrap.min.js'></script>
+        <!-- http://www.jqueryscript.net/demo/jQuery-Plugin-For-Off-canvas-Bootstrap-Navigation/ -->
+        <script type="text/javascript" src='js/bootstrap.offcanvas.js'></script>
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- THE angularJS -->
+        <script type="text/javascript" src='js/angular.min.js'></script>
+        <!-- ngRoute -->
+        <script type="text/javascript" src='js/angular-route.js'></script>
+        <!-- custom Functions -->
+        <script type="text/javascript" src='js/functions.js'></script>
+        <!-- THE angularJS -->
+        <script type="text/javascript" src='js/app.js'></script>
     </body>
   </html>
